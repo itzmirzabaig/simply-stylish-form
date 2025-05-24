@@ -2,87 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Simply Stylish Luxe List</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #ffd6db;
-      background-image: linear-gradient(45deg, #ffd6db 25%, #ffc1c9 25%, #ffc1c9 50%, #ffd6db 50%, #ffd6db 75%, #ffc1c9 75%, #ffc1c9 100%);
-      background-size: 40px 40px;
-      color: #b20045;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.3em;
-    }
-
-    p {
-      font-size: 1.2em;
-      margin-bottom: 2em;
-    }
-
-    form {
-      background: white;
-      padding: 2em;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      max-width: 400px;
-      width: 100%;
-    }
-
-    input[type="email"] {
-      width: 100%;
-      padding: 0.8em;
-      margin-bottom: 1em;
-      border: 2px solid #ff5a8a;
-      border-radius: 8px;
-      font-size: 1em;
-    }
-
-    button {
-      background-color: #ff5a8a;
-      color: white;
-      padding: 0.8em 1.5em;
-      font-size: 1em;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #e94e7a;
-    }
-
-    footer {
-      margin-top: 3em;
-      font-size: 0.9em;
-      color: #a84c6f;
-    }
-  </style>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Simply Stylish Luxe List</h1>
-  <p>Sign up to get updates, offers, and more ✨</p>
-
-  <form name="luxelist" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="luxelist" />
-    <input type="email" name="email" placeholder="Enter your email" required />
-    <button type="submit">Subscribe</button>
-  </form>
-
-  <footer>
-    &copy; 2025 Simply Stylish Co.
-  </footer>
+  <div class="form-container">
+    <header>
+      <h1>Join the Luxe List</h1>
+      <p>Exclusive drops, insider tips & luxe inspo—straight to your inbox.</p>
+    </header>
+    <form name="luxelist" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="luxelist" />
+      <div class="field">
+        <input type="email" name="email" placeholder="Your email address" required />
+      </div>
+      <button type="submit">Subscribe</button>
+    </form>
+    <footer>
+      <span>No spam. Ever.</span>
+    </footer>
+  </div>
 </body>
 </html>
